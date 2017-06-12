@@ -7,53 +7,66 @@
 var Airtable = require('airtable');
 Airtable.configure({
     endpointUrl: 'https://api.airtable.com',
-    apiKey: 'keyNyK2dVB4Da7Dzo'
+    apiKey: 'keyy840KvfhDAHXKL'
 });
-var base = Airtable.base('appYjgGyxE7AXQYex');
+var base = Airtable.base('appbbz2yerInkMeoh');
+
 // Check-Check
 console.log(base);
 
 // Get Records
-base('YaHURR').select({
+base('Top 10').select({
+
     view: 'Grid view'
 }).firstPage(function(err, records) {
-    
     if (err) { console.error(err); return; }
-
     records.forEach(function(record) {
-       
-      // Check-Check 
-      // console.log('Retrieved', record.get('Name'));
-      // console.log( record.fields.Avatar[0].url ); 
-
-      // Display Data
-      showStudents(record)
-
+        console.log('Retrieved', record.get('Presidents'));
+        
+        showPresidents(record)
     });
 });
 
-// Template Literal
-var showStudents = function(record) {
+
+var showPresidents = function(record) {
 
   var template = 
   `
-    <section class="ui raised card">
-        <div class="image">
-           <img src=" ${record.fields.Avatar[0].url} " alt="">
-        </div>
-       <div class="content">
-           <h3>${record.fields.Name}</h3>
-           <p class="description">
-               ${record.fields.Bio}
-           </p>
-           <p class="description">
-              <a href=" ${record.fields.GitHub} ">GitHub</a> and <a href="mailto:${record.fields.Email}">Email</a>
-           </p>
-       </div>
-    </section>
-  `;
+<div class="item">
+      <input type="checkbox">
+      <p>${record.fields.Presidents}</p>
+</div>
+  `
+;
 
-  // Display Collected Data
-  $('#students').append(template);
+    // Display Collected Data
+  $('#tester').append(template);
 
 }
+
+
+
+
+
+const checkboxes = document.querySelectorAll('.column input[type="checkbox"]');
+
+let lastChecked;
+
+function handleCheck(e) {
+  let inBetween = false;
+  if (e.shiftKey && this.checked) {
+    checkboxes.forEach(checkbox => {
+      if (checkbox === this || checkbox === lastChecked) {
+        inBetween = !inBetween;
+      }
+
+      if (inBetween) {
+        checkbox.checked = true;
+      }
+    });
+  }
+
+  lastChecked = this;
+}
+
+checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));

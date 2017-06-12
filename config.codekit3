@@ -210,7 +210,7 @@
 	"\/js\/jquery.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/docs\/js\/jquery.js",
 		"oF": 0,
 		"sC": 0,
@@ -228,7 +228,7 @@
 	"\/js\/semantic.js": {
 		"ft": 64,
 		"mi": 0,
-		"oA": 0,
+		"oA": 1,
 		"oAP": "\/docs\/js\/semantic.js",
 		"oF": 0,
 		"sC": 0,
@@ -249,7 +249,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 513040678,
-	"displayValue": "yahurr",
+	"displayValue": "checklist",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-dunnoGirl",
 	"lastBuiltDate": 516842052
