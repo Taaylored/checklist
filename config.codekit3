@@ -22,18 +22,15 @@
 		"oS": 3,
 		"uL": 1
 		},
-	"\/css\/styles.scss": {
-		"aP": 0,
+	"\/css\/styles.css": {
+		"aP": 1,
 		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 1,
+		"ft": 16,
+		"ma": 0,
 		"oA": 0,
 		"oAP": "\/docs\/css\/styles.css",
 		"oF": 0,
-		"oS": 3,
-		"uL": 1
+		"oS": 0
 		},
 	"\/docs": {
 		"ft": 65536,
@@ -92,94 +89,6 @@
 		"oA": 1,
 		"oAP": "\/docs\/html\/scripts.html",
 		"oF": 0
-		},
-	"\/img\/favicons\/android-chrome-192x192.png": {
-		"ft": 32768,
-		"iS": 39826,
-		"oA": 0,
-		"oAP": "\/docs\/img\/favicons\/android-chrome-192x192.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/favicons\/android-chrome-512x512.png": {
-		"ft": 32768,
-		"iS": 223203,
-		"oA": 0,
-		"oAP": "\/docs\/img\/favicons\/android-chrome-512x512.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/favicons\/apple-touch-icon.png": {
-		"ft": 32768,
-		"iS": 35625,
-		"oA": 0,
-		"oAP": "\/docs\/img\/favicons\/apple-touch-icon.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/favicons\/browserconfig.xml": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/img\/favicons\/browserconfig.xml",
-		"oF": 0
-		},
-	"\/img\/favicons\/favicon-16x16.png": {
-		"ft": 32768,
-		"iS": 1237,
-		"oA": 0,
-		"oAP": "\/docs\/img\/favicons\/favicon-16x16.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/favicons\/favicon-32x32.png": {
-		"ft": 32768,
-		"iS": 2272,
-		"oA": 0,
-		"oAP": "\/docs\/img\/favicons\/favicon-32x32.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/favicons\/favicon.ico": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/docs\/img\/favicons\/favicon.ico",
-		"oF": 0
-		},
-	"\/img\/favicons\/mstile-150x150.png": {
-		"ft": 32768,
-		"iS": 20590,
-		"oA": 0,
-		"oAP": "\/docs\/img\/favicons\/mstile-150x150.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"oT": 1,
-		"q": 100
-		},
-	"\/img\/favicons\/safari-pinned-tab.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/docs\/img\/favicons\/safari-pinned-tab.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
 		},
 	"\/img\/menu.png": {
 		"ft": 32768,
@@ -249,10 +158,10 @@
 	},
 "projectAttributes": {
 	"creationDate": 513040678,
-	"displayValue": "checklist",
+	"displayValue": "variables",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-dunnoGirl",
-	"lastBuiltDate": 516842052
+	"lastBuiltDate": 519007033
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

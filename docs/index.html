@@ -25,88 +25,57 @@
     <link rel="stylesheet" href="manifest.json">
 
 
-    <title> Web 3 | Checklist | Dynamic Data  </title>
+    <title> lvlUP | Variable + Airtable Data  </title>
     
     <!-- Semantic UI -->
     <link rel="stylesheet" href="css/styles.css">
     
     <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicons/favicon-16x16.png" sizes="16x16">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="mask-icon" href="img/favicons/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="theme-color" content="#ffffff">
+
     
 </head>
 
 <html>
 <body>
-   
-  
-    
-<main class="ui two column grid container">
-       
-     
-
-       
-<!--
-       
-<article class="column" id="prez">
-<div class="inbox">
-    <div class="item">
-        <input type="checkbox">
-        <p class="name">Presidents Name</p>
-    </div>
-</div>
-</article>  
--->
-
-	   <article class="column">
- <div class="inbox">
-     <div id="tester">
-     </div>
- </div>
-</article>
-   
-   
-	    
-	   
-<article class="column" >
+ 
+<div class="ui equal width center aligned padded grid">
 
  
-  <div class="inbox">
-   
-    
-    <div class="item">
-      <input type="checkbox">
-      <p>Check one item</p>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <p>Hold down your Shift key</p>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <p>Check a lower item</p>
-    </div>
-    
-    <div class="item">
-      <input type="checkbox">
-      <p>Everything inbetween should also be set to checked</p>
-    </div>
-
-  </div>
-
-</article>
-
-	    
-	   
+  <div class=" ui segment">
+<h2 class='hl'>Update CSS Variables with <span class='hl'>JS</span></h2>
+    <h4>Added custom font-size slider + image from airtable</h4>
 
     
-	</main>
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="10" max="200" value="10" data-sizing="px">
+
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="10" data-sizing="px">
+
+    <label for="size">Font Size</label>
+    <input id="size" type="range" name="size" min="10" max="50" value="30" data-sizing="px">
+    
+    <label for="base">Base Color</label>
+    <input id="base" type="color" name="base" value="#7F00FF">
+  
+    </div>
+  
+ 
+ <div class=" ui equal width center aligned padded grid">
+ <div class="ui medium bordered image">
+
+<div class="column" id="designer" >  
+<!--    <img src="https://source.unsplash.com/7bwQXzbF6KE/800x500">-->
+</div>
+</div>
+    </div>
+     </div>
+    
+    
+    
+    </div>
     <script src="js/scripts.js"></script> 
 </body>
 </html>

@@ -1,9 +1,18 @@
-
 // @codekit-prepend "jquery.js";
 // @codekit-prepend "semantic.js";
 // @codekit-prepend "airtable.js";
 
-// CONFIGURE & "Handshake"
+const inputs = document.querySelectorAll('.controls input');
+        function handleUpdate() {
+        const suffix = this.dataset.sizing || '';
+        document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+      }
+      
+    inputs.forEach(input => input.addEventListener('change', handleUpdate));
+    inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
+ 
+
+
 var Airtable = require('airtable');
 Airtable.configure({
     endpointUrl: 'https://api.airtable.com',
@@ -16,7 +25,7 @@ console.log(base);
 
 // Get Records
 base('Top 10').select({
-
+   maxRecords: 1,
     view: 'Grid view'
 }).firstPage(function(err, records) {
     if (err) { console.error(err); return; }
@@ -29,44 +38,16 @@ base('Top 10').select({
 
 
 var showPresidents = function(record) {
+    console.log(record.fields.Image);
 
   var template = 
   `
-<div class="item">
-      <input type="checkbox">
-      <p>${record.fields.Presidents}</p>
-</div>
+<img src=" ${record.fields.Image[0].url} " alt="">
+
   `
 ;
 
     // Display Collected Data
-  $('#tester').append(template);
+  $('#designer').append(template);
 
 }
-
-
-
-
-
-const checkboxes = document.querySelectorAll('.column input[type="checkbox"]');
-
-let lastChecked;
-
-function handleCheck(e) {
-  let inBetween = false;
-  if (e.shiftKey && this.checked) {
-    checkboxes.forEach(checkbox => {
-      if (checkbox === this || checkbox === lastChecked) {
-        inBetween = !inBetween;
-      }
-
-      if (inBetween) {
-        checkbox.checked = true;
-      }
-    });
-  }
-
-  lastChecked = this;
-}
-
-checkboxes.forEach(checkbox => checkbox.addEventListener('click', handleCheck));
