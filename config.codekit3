@@ -101,6 +101,16 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/img\/paul-rand.jpg": {
+		"ft": 16384,
+		"iS": 81491,
+		"oA": 0,
+		"oAP": "\/docs\/img\/paul-rand.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/index.kit": {
 		"ft": 2048,
 		"oA": 0,
